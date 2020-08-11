@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    
+    api project(':domain')
+
+    api 'com.squareup.retrofit2:retrofit:2.6.1'
+    api 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    api 'com.google.code.gson:gson:2.8.5'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    api "io.reactivex.rxjava2:rxandroid:2.1.0"
+    api 'com.itkacher.okhttpprofiler:okhttpprofiler:1.0.5'
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    testImplementation "com.nhaarman:mockito-kotlin:1.5.0"
+
+
+}
+
+repositories {
+    mavenCentral()
+}
