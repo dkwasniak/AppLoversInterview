@@ -7,12 +7,12 @@ import org.koin.dsl.module
 
 val viewModelModule = module {
 
-    viewModel { MainActivityViewModel(get(), get()) }
+    viewModel { MainActivityViewModel(get()) }
 
-    viewModel { CodeFragmentViewModel(get(), get()) }
 
-    viewModel { LoginFragmentViewModel(get(), get(), get()) }
+    viewModel { LoginFragmentViewModel(get()) }
 
-    viewModel { GalleryFragmentViewModel(get()) }
+    viewModel { ProgressFragmentViewModel(get()) }
+
 
 }

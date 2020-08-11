@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="take_photo_background_height">150dp</dimen>
+    <dimen name="login_screen_side_margin">52dp</dimen>
+    <dimen name="login_screen_top_margin">62dp</dimen>
+
+    <dimen name="progress_screen_side_margin">105dp</dimen>
+    <dimen name="progress_screen_top_margin">132dp</dimen>
 </resources>

@@ -7,5 +7,19 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.damiankwasniak.interview.fragment.LoginFragment"
-        android:label="LoginFragment" />
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_progressFragment"
+            app:destination="@id/progressFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.damiankwasniak.interview.fragment.ProgressFragment"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" />
 </navigation>
