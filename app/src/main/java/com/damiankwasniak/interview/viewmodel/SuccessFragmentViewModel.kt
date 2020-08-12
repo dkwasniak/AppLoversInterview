@@ -4,9 +4,9 @@ import com.damiankwasniak.interview.base.BaseViewModel
 import com.damiankwasniak.interview.provider.ResourcesProvider
 
 
-class ProgressFragmentViewModel(
+class SuccessFragmentViewModel(
     resourcesProvider: ResourcesProvider
-) : BaseViewModel<ProgressFragmentViewModel.Command>(resourcesProvider) {
+) : BaseViewModel<SuccessFragmentViewModel.Command>(resourcesProvider) {
 
 
 

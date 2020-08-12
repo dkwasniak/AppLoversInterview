@@ -5,4 +5,7 @@
 
     <dimen name="progress_screen_side_margin">105dp</dimen>
     <dimen name="progress_screen_top_margin">132dp</dimen>
+
+    <dimen name="success_screen_side_margin">105dp</dimen>
+    <dimen name="success_screen_top_margin">132dp</dimen>
 </resources>

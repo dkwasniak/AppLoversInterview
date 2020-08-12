@@ -6,7 +6,7 @@ import org.koin.dsl.module
 val domainModule = module {
 
     single<MainInteractor> {
-        MainInteractor(get())
+        MainInteractor(get(), get())
     }
 
 }

@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="WhiteAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/white</item>
+    </style>
+
     <style name="EditTextStyle">
         <item name="android:paddingStart">@dimen/material_baseline_grid_2x</item>
         <item name="android:paddingEnd">@dimen/material_baseline_grid_3x</item>
@@ -15,6 +20,13 @@
         <item name="android:textColorHint">@color/white</item>
         <item name="android:background">@drawable/transparent_rouded_background_with_gray_outline_4dp</item>
         <item name="android:layout_height">@dimen/material_baseline_grid_6x</item>
+    </style>
+
+    <style name="ToolbarNoInset">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
     </style>
 
 </resources>

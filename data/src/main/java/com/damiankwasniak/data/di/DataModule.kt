@@ -1,12 +1,14 @@
 package com.damiankwasniak.data.di
 
-import io.realm.Realm
+import com.damiankwasniak.data.repository.MainRepositoryImpl
+import com.damiankwasniak.domain.repository.MainRepository
+import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
 val dataModule = module {
 
-
-    single<Realm> {
-        Realm.getDefaultInstance()
+    single<MainRepository> {
+        MainRepositoryImpl(get(named(MAIN_RETROFIT)))
     }
+
 }
